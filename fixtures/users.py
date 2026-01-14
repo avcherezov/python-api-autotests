@@ -19,11 +19,11 @@ class UserFixture(BaseModel):
     @property
     def password(self) -> str:
         return self.request.password
-    
+
     @property
     def authentication_user(self) -> AuthenticationUserSchema:
         return AuthenticationUserSchema(
-            email=self.request.email, 
+            email=self.request.email,
             password=self.request.password,
         )
 
