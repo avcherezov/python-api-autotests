@@ -1,4 +1,3 @@
-import pytest
 from http import HTTPStatus
 
 from clients.files.files_client import FilesClient
