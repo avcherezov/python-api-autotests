@@ -30,7 +30,7 @@ class TestAuthentication:
         assert_login_response(response_data)
 
         validate_json_schema(response.json(), response_data.model_json_schema())
-    
+
     def test_update_token(
             self,
             function_authentication: AuthenticationFixture,

@@ -1,5 +1,5 @@
 from clients.errors_schema import InternalErrorResponseSchema, ValidationErrorResponseSchema, ValidationErrorSchema
-from clients.files.files_schema import CreateFileResponseSchema, CreateFileRequestSchema, FileSchema, GetFileResponseSchema
+from clients.files.files_schema import CreateFileResponseSchema, CreateFileRequestSchema, GetFileResponseSchema
 from tools.assertions.base import assert_equal
 from tools.assertions.errors import assert_internal_error_response, assert_validation_error_response
 from config import settings
@@ -20,32 +20,18 @@ def assert_create_file_response(request: CreateFileRequestSchema, response: Crea
     assert_equal(response.file.directory, request.directory, "directory")
 
 
-def assert_file(actual: FileSchema, expected: FileSchema):
-    """
-    Проверяет, что фактические данные файла соответствуют ожидаемым.
-
-    :param actual: Фактические данные файла.
-    :param expected: Ожидаемые данные файла.
-    :raises AssertionError: Если хотя бы одно поле не совпадает.
-    """
-    assert_equal(actual.id, expected.id, "id")
-    assert_equal(actual.url, expected.url, "url")
-    assert_equal(actual.filename, expected.filename, "filename")
-    assert_equal(actual.directory, expected.directory, "directory")
-
-
-def assert_get_file_response(
-        get_file_response: GetFileResponseSchema,
-        create_file_response: CreateFileResponseSchema
-):
+def assert_get_file_response(request: CreateFileRequestSchema, response: GetFileResponseSchema):
     """
     Проверяет, что ответ на получение файла соответствует ответу на его создание.
 
-    :param get_file_response: Ответ API при запросе данных файла.
-    :param create_file_response: Ответ API при создании файла.
-    :raises AssertionError: Если данные файла не совпадают.
+    :param request: Исходный запрос на создание файла.
+    :param response: Ответ API с данными файла.
+    :raises AssertionError: Если хотя бы одно поле не совпадает.
     """
-    assert_file(get_file_response.file, create_file_response.file)
+    assert_equal(request.file.id, response.file.id, "id")
+    assert_equal(request.file.url, response.file.url, "url")
+    assert_equal(request.file.filename, response.file.filename, "filename")
+    assert_equal(request.file.directory, response.file.directory, "directory")
 
 
 def assert_create_file_with_empty_filename_response(actual: ValidationErrorResponseSchema):

@@ -91,7 +91,7 @@ class GetCourseRequestSchema(BaseModel):
     """
     model_config = ConfigDict(populate_by_name=True)
 
-    courses: CourseSchema
+    course: CourseSchema
 
 
 class GetCourseResponseSchema(BaseModel):
@@ -100,4 +100,4 @@ class GetCourseResponseSchema(BaseModel):
     """
     model_config = ConfigDict(populate_by_name=True)
 
-    courses: CourseSchema
+    course: CourseSchema
