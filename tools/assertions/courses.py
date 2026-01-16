@@ -1,4 +1,11 @@
-from clients.courses.courses_schema import CourseSchema, CreateCourseRequestSchema, CreateCourseResponseSchema, GetCoursesResponseSchema, UpdateCourseRequestSchema, UpdateCourseResponseSchema
+from clients.courses.courses_schema import (
+    CourseSchema,
+    CreateCourseRequestSchema,
+    CreateCourseResponseSchema,
+    GetCoursesResponseSchema,
+    UpdateCourseRequestSchema,
+    UpdateCourseResponseSchema
+)
 from tools.assertions.base import assert_equal, assert_length
 from tools.assertions.files import assert_file
 from tools.assertions.users import assert_user

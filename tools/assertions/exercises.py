@@ -1,5 +1,13 @@
 from clients.errors_schema import InternalErrorResponseSchema
-from clients.exercises.exercises_schema import CreateExerciseRequestSchema, CreateExerciseResponseSchema, ExerciseSchema, GetExerciseResponseSchema, GetExercisesResponseSchema, UpdateExerciseRequestSchema, UpdateExerciseResponseSchema
+from clients.exercises.exercises_schema import (
+    CreateExerciseRequestSchema,
+    CreateExerciseResponseSchema,
+    ExerciseSchema,
+    GetExerciseResponseSchema,
+    GetExercisesResponseSchema,
+    UpdateExerciseRequestSchema,
+    UpdateExerciseResponseSchema
+)
 from tools.assertions.base import assert_equal, assert_length
 from tools.assertions.errors import assert_internal_error_response
 

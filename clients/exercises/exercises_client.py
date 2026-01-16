@@ -1,14 +1,14 @@
-from clients.api_client import APIClient, Response
+from httpx import Response
+
+from clients.api_client import APIClient
 from clients.exercises.exercises_schema import (
     CreateExerciseRequestSchema,
     CreateExerciseResponseSchema,
-    GetExerciseResponseSchema,
     GetExercisesQuerySchema,
-    GetExercisesResponseSchema,
     UpdateExerciseRequestSchema,
-    UpdateExerciseResponseSchema,
 )
 from clients.private_http_builder import AuthenticationUserSchema, get_private_http_client
+
 from tools.routes import APIRoutes
 
 
@@ -63,46 +63,9 @@ class ExercisesClient(APIClient):
         """
         return self.delete(f"{APIRoutes.EXERCISES}/{exercise_id}")
 
-    # def get_exercises(self, query: GetExercisesQuerySchema) -> GetExercisesResponseSchema:
-    #     """
-    #     Метод выполняет получение списка заданий для определенного курса.
-
-    #     :param query: GetExercisesQuerySchema
-    #     :return: Ответ от сервера в виде объекта GetExercisesResponseSchema
-    #     """
-    #     response = self.get_exercises_api(query=query)
-    #     return GetExercisesResponseSchema.model_validate_json(response.text)
-
-    # def get_exercise(self, exercise_id: str) -> GetExerciseResponseSchema:
-    #     """
-    #     Метод получения задания.
-
-    #     :param exercise_id: Идентификатор задания.
-    #     :return: Ответ от сервера в виде объекта GetExerciseResponseSchema
-    #     """
-    #     response = self.get_exercise_api(exercise_id=exercise_id)
-    #     return GetExerciseResponseSchema.model_validate_json(response.text)
-
     def create_exercise(self, request: CreateExerciseRequestSchema) -> CreateExerciseResponseSchema:
-        """
-        Метод создания задания.
-
-        :param request: CreateExerciseRequestSchema
-        :return: Ответ от сервера в виде объекта CreateExerciseResponseSchema
-        """
         response = self.create_exercise_api(request=request)
         return CreateExerciseResponseSchema.model_validate_json(response.text)
-
-    # def update_exercise(self, exercise_id: str, request: UpdateExerciseRequestSchema) -> UpdateExerciseResponseSchema:
-    #     """
-    #     Метод обновления задания.
-
-    #     :param exercise_id: Идентификатор задания.
-    #     :param request: UpdateExerciseRequestSchema
-    #     :return: Ответ от сервера в виде объекта UpdateExerciseResponseSchema
-    #     """
-    #     response = self.update_exercise_api(exercise_id=exercise_id, request=request)
-    #     return UpdateExerciseResponseSchema.model_validate_json(response.text)
 
 
 def get_exercises_client(user: AuthenticationUserSchema) -> ExercisesClient:

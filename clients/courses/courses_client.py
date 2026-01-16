@@ -5,9 +5,6 @@ from clients.courses.courses_schema import (
     CreateCourseRequestSchema,
     CreateCourseResponseSchema,
     GetCoursesRequestSchema,
-    GetCourseResponseSchema,
-    GetCourseRequestSchema,
-    GetCoursesResponseSchema,
     UpdateCourseRequestSchema,
     UpdateCourseResponseSchema,
 )
@@ -66,16 +63,6 @@ class CoursesClient(APIClient):
         """
         return self.delete(f"{APIRoutes.COURSES}/{course_id}")
 
-    # def get_course(self, course_id: str) -> GetCourseResponseSchema:
-    #     """
-    #     Метод получения курса.
-
-    #     :param course_id: Идентификатор курса.
-    #     :return: Ответ в виде объекта GetCourseResponseSchema
-    #     """
-    #     response = self.get_course_api(course_id=course_id)
-    #     return GetCourseResponseSchema.model_validate_json(response.text)
-
     def create_course(self, request: CreateCourseRequestSchema) -> CreateCourseResponseSchema:
         """
         Метод создания курса.
@@ -85,27 +72,6 @@ class CoursesClient(APIClient):
         """
         response = self.create_course_api(request=request)
         return CreateCourseResponseSchema.model_validate_json(response.text)
-
-    # def update_course(self, course_id: str, request: UpdateCourseRequestSchema) -> UpdateCourseResponseSchema:
-    #     """
-    #     Метод обновления курса.
-
-    #     :param course_id: Идентификатор курса.
-    #     :param request: UpdateCourseRequestSchema.
-    #     :return: Ответ в виде объекта UpdateCourseResponseSchema
-    #     """
-    #     response = self.update_course_api(course_id=course_id, request=request)
-    #     return UpdateCourseResponseSchema.model_validate_json(response.text)
-
-    # def get_courses(self, query: GetCoursesQuerySchema) -> GetCoursesResponseSchema:
-    #     """
-    #     Метод получения списка курсов.
-
-    #     :param query: GetCoursesQuerySchema
-    #     :return: Ответ в виде объекта GetCoursesResponseSchema
-    #     """
-    #     response = self.get_courses_api(query=query)
-    #     return GetCoursesResponseSchema.model_validate_json(response.text)
 
 
 def get_courses_client(user: AuthenticationUserSchema) -> CoursesClient:
