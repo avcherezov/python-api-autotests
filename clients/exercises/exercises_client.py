@@ -1,5 +1,6 @@
 from httpx import Response
 
+import allure
 from clients.api_client import APIClient
 from clients.exercises.exercises_schema import (
     CreateExerciseRequestSchema,
@@ -8,7 +9,6 @@ from clients.exercises.exercises_schema import (
     UpdateExerciseRequestSchema,
 )
 from clients.private_http_builder import AuthenticationUserSchema, get_private_http_client
-
 from tools.routes import APIRoutes
 
 

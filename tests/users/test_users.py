@@ -11,7 +11,6 @@ from clients.users.users_schema import (
     UpdateUserResponseSchema
 )
 from fixtures.users import UserFixture
-
 from tools.assertions.base import assert_status_code
 from tools.assertions.schema import validate_json_schema
 from tools.assertions.users import (
