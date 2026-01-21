@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAxLTIxVDEyOjM3OjEzLjkwMjcxMCIsInVzZXJfaWQiOiI5MGNmZGI4ZC1jZjc1LTQ3NzgtODUxMC1lMTUyYmRjNjIzYmEifQ.nuppUnWx2SrB5ry62kB6tDldUQZrxNFXV0sPpAMr8ds' \
+  -H 'content-length: 363' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Society get drug.","maxScore":60,"minScore":19,"description":"Reflect herself positive center eat compare. Act study poor hope single front.\nWorld do discuss put value election. Beat realize according later hear.","estimatedTime":"8 weeks","previewFileId":"df8259be-1bd5-45dc-a8df-365d83b4d4f3","createdByUserId":"90cfdb8d-cf75-4778-8510-e152bdc623ba"}'
