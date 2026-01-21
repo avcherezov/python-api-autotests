@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAxLTIxVDEzOjUwOjI2LjUwNTk2NCIsInVzZXJfaWQiOiJhMDQ0Yzg1NC0yZGY2LTQzZDQtOGJmNS0zYmQ2NDAyYzZmYjUifQ.RmH6i6B4KD3gaeveVspCCj_m0A0YlS-Lol1dDEAiZhw' \
+  -H 'content-length: 392' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Out sing like weight probably cover.","maxScore":79,"minScore":16,"description":"Help director reality quickly. Game family rather foreign laugh. Might one floor politics all wall road mission.\nElection side record college final wish figure.","estimatedTime":"9 weeks","previewFileId":"d971d07f-6d4c-4b38-a8f6-dea815ffb1c7","createdByUserId":"a044c854-2df6-43d4-8bf5-3bd6402c6fb5"}'

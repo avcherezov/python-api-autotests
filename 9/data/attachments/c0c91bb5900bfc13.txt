@@ -1,0 +1,19 @@
+INFO     HTTP_CLIENT:event_hooks.py:27 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:36 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:27 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:36 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:27 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:36 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:27 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:36 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     BASE_ASSERTIONS:base.py:19 Check that response status code equals to 200
+INFO     COURSES_ASSERTIONS:courses.py:22 Check create course response
+INFO     BASE_ASSERTIONS:base.py:38 Check that "title" equals to Out sing like weight probably cover.
+INFO     BASE_ASSERTIONS:base.py:38 Check that "max_score" equals to 79
+INFO     BASE_ASSERTIONS:base.py:38 Check that "min_score" equals to 16
+INFO     BASE_ASSERTIONS:base.py:38 Check that "description" equals to Help director reality quickly. Game family rather foreign laugh. Might one floor politics all wall road mission.
+Election side record college final wish figure.
+INFO     BASE_ASSERTIONS:base.py:38 Check that "estimated_time" equals to 9 weeks
+INFO     BASE_ASSERTIONS:base.py:38 Check that "preview_file_id" equals to d971d07f-6d4c-4b38-a8f6-dea815ffb1c7
+INFO     BASE_ASSERTIONS:base.py:38 Check that "created_by_user_id" equals to a044c854-2df6-43d4-8bf5-3bd6402c6fb5
+INFO     SCHEMA_ASSERTIONS:schema.py:21 Validating JSON schema
