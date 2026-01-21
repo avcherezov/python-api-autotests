@@ -3,6 +3,7 @@ from http import HTTPStatus
 from clients.courses.courses_client import CoursesClient
 from clients.courses.courses_schema import CreateCourseRequestSchema, CreateCourseResponseSchema
 from fixtures.users import UserFixture
+from fixtures.files import FileFixture
 from tools.assertions.base import assert_status_code
 from tools.assertions.courses import assert_create_course_response
 from tools.assertions.schema import validate_json_schema
