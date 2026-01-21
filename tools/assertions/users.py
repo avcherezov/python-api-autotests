@@ -8,6 +8,9 @@ from clients.users.users_schema import (
     UpdateUserResponseSchema
 )
 from tools.assertions.base import assert_equal
+from tools.logger import get_logger
+
+logger = get_logger("USERS_ASSERTIONS")
 
 
 @allure.step("Check user")
@@ -18,6 +21,8 @@ def assert_user(actual: UserSchema, expected: UserSchema):
     :param actual: Объект UserSchema.
     :raises expected: Объект UserSchema.
     """
+    logger.info("Check user")
+
     assert_equal(actual.id, expected.id, "id")
     assert_equal(actual.email, expected.email, "email")
     assert_equal(actual.last_name, expected.last_name, "last_name")
@@ -33,6 +38,8 @@ def assert_get_user_response(get_user_response, create_user_response):
     :param get_user_response: ответ API при запросе пользователя.
     :raises create_user_response: ответ API при создании пользователя.
     """
+    logger.info("Check get user response")
+
     assert_user(get_user_response, create_user_response)
 
 
@@ -45,6 +52,8 @@ def assert_create_user_response(request: CreateUserRequestSchema, response: Crea
     :param response: Ответ API с данными пользователя.
     :raises AssertionError: Если хотя бы одно поле не совпадает.
     """
+    logger.info("Check create user response")
+
     assert_equal(response.user.email, request.email, "email")
     assert_equal(response.user.last_name, request.last_name, "last_name")
     assert_equal(response.user.first_name, request.first_name, "first_name")
@@ -60,6 +69,8 @@ def assert_update_user_response(request: UpdateUserRequestSchema, response: Upda
     :param response: Ответ API с данными пользователя.
     :raises AssertionError: Если хотя бы одно поле не совпадает.
     """
+    logger.info("Check update user response")
+
     if request.email is not None:
         assert_equal(response.user.email, request.email, "email")
     if request.last_name is not None:

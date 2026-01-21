@@ -1,5 +1,8 @@
 from clients.exercises.exercises_schema import CreateExerciseRequestSchema, CreateExerciseResponseSchema
 from tools.assertions.base import assert_equal
+from tools.logger import get_logger
+
+logger = get_logger("EXERCISES_ASSERTIONS")
 
 
 def assert_create_exercise_response(
@@ -13,6 +16,7 @@ def assert_create_exercise_response(
     :param expected: Ожидаемые данные задания.
     :raises AssertionError: Если данные задания не совпадают.
     """
+    logger.info("Check create exercise response")
     
     assert_equal(actual.title, expected.exercise.title, "title")
     assert_equal(actual.course_id, expected.exercise.course_id, "course_id")
