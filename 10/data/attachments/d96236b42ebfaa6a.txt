@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/courses/52985cb8-5b47-4e1e-af28-5a472ac78eea' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAxLTIyVDA5OjM5OjMwLjMxNzA2MyIsInVzZXJfaWQiOiIyM2FjOGE5ZC1lY2Q3LTRkNWMtYjg1NS1jZTMyNTQ5MTYzMTAifQ.jVQx0im-LyRb14IR96SFNWqOUMlt1srdIFmIcAyHEZM' \
+  -H 'content-length: 286' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Forget prove start.","maxScore":97,"minScore":14,"description":"Share lay board decision. Capital support nothing point he could involve must.\nOff hair bag. Society particular recent.\nTrouble man out lawyer nothing chair. Some let good use range.","estimatedTime":"2 weeks"}'

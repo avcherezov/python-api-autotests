@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAxLTIyVDA5OjM5OjMwLjMxNzA2MyIsInVzZXJfaWQiOiIyM2FjOGE5ZC1lY2Q3LTRkNWMtYjg1NS1jZTMyNTQ5MTYzMTAifQ.jVQx0im-LyRb14IR96SFNWqOUMlt1srdIFmIcAyHEZM' \
+  -H 'content-length: 413' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Outside interest animal oil.","maxScore":90,"minScore":2,"description":"Throw learn end allow employee this hit five. Draw will lose.\nReady democratic very be. Of social technology leader believe this. No such exactly evening activity. Sit mind smile statement.","estimatedTime":"10 weeks","previewFileId":"cc08d0fe-752b-401d-8918-40149282e259","createdByUserId":"23ac8a9d-ecd7-4d5c-b855-ce3254916310"}'

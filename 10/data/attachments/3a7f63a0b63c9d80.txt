@@ -1,0 +1,28 @@
+INFO     HTTP_CLIENT:event_hooks.py:27 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:36 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:27 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:36 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:27 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:36 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:27 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:36 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:27 Make GET request to http://localhost:8000/api/v1/courses/ce6aa82c-fc89-4d2a-8ed1-abcf0dce3177
+INFO     HTTP_CLIENT:event_hooks.py:36 Got response 200 OK from http://localhost:8000/api/v1/courses/ce6aa82c-fc89-4d2a-8ed1-abcf0dce3177
+INFO     BASE_ASSERTIONS:base.py:19 Check that response status code equals to 200
+INFO     BASE_ASSERTIONS:base.py:38 Check that "id" equals to ce6aa82c-fc89-4d2a-8ed1-abcf0dce3177
+INFO     BASE_ASSERTIONS:base.py:38 Check that "title" equals to Expert help other.
+INFO     BASE_ASSERTIONS:base.py:38 Check that "max_score" equals to 59
+INFO     BASE_ASSERTIONS:base.py:38 Check that "min_score" equals to 5
+INFO     BASE_ASSERTIONS:base.py:38 Check that "description" equals to Impact others surface more. Federal spring government pass commercial exactly marriage population. Human our thus reality understand approach. Table wall short this.
+INFO     BASE_ASSERTIONS:base.py:38 Check that "estimated_time" equals to 3 weeks
+INFO     BASE_ASSERTIONS:base.py:38 Check that "id" equals to 2618b552-3083-4313-b05e-e20a2b60d2a5
+INFO     BASE_ASSERTIONS:base.py:38 Check that "url" equals to http://localhost:8000/static/tests/ffba5854-c05e-49cc-b191-13eceb30e760.png
+INFO     BASE_ASSERTIONS:base.py:38 Check that "filename" equals to ffba5854-c05e-49cc-b191-13eceb30e760.png
+INFO     BASE_ASSERTIONS:base.py:38 Check that "directory" equals to tests
+INFO     USERS_ASSERTIONS:users.py:24 Check user
+INFO     BASE_ASSERTIONS:base.py:38 Check that "id" equals to dfdbff98-7a7c-4c5e-9d14-5f5a72ac0277
+INFO     BASE_ASSERTIONS:base.py:38 Check that "email" equals to randallfrancisco@example.net
+INFO     BASE_ASSERTIONS:base.py:38 Check that "last_name" equals to Campbell
+INFO     BASE_ASSERTIONS:base.py:38 Check that "first_name" equals to Bill
+INFO     BASE_ASSERTIONS:base.py:38 Check that "middle_name" equals to Kelli
+INFO     SCHEMA_ASSERTIONS:schema.py:21 Validating JSON schema
