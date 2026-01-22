@@ -6,7 +6,7 @@ from clients.api_coverage import tracker
 from clients.courses.courses_schema import (
     CreateCourseRequestSchema,
     CreateCourseResponseSchema,
-    GetCoursesRequestSchema,
+    GetCoursesQuerySchema,
     UpdateCourseRequestSchema,
     UpdateCourseResponseSchema,
 )
@@ -21,11 +21,11 @@ class CoursesClient(APIClient):
 
     @allure.step("Get courses")
     @tracker.track_coverage_httpx(f"{APIRoutes.COURSES}")
-    def get_courses_api(self, query: GetCoursesRequestSchema) -> Response:
+    def get_courses_api(self, query: GetCoursesQuerySchema) -> Response:
         """
         Метод получения списка курсов.
 
-        :param query: GetCoursesRequestSchema
+        :param query: GetCoursesQuerySchema
         :return: Ответ от сервера в виде объекта httpx.Response
         """
         return self.get(APIRoutes.COURSES, params=query.model_dump(by_alias=True))

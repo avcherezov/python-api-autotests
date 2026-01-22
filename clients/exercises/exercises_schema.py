@@ -62,7 +62,7 @@ class UpdateExerciseResponseSchema(BaseModel):
     exercise: ExerciseSchema
 
 
-class GetExercisesQuerySchema(BaseModel):
+class GetExerciseRequestSchema(BaseModel):
     """
     Описание структуры запроса на получение списка курсов.
     """

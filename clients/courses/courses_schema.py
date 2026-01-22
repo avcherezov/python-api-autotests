@@ -67,13 +67,13 @@ class UpdateCourseResponseSchema(BaseModel):
     course: CourseSchema
 
 
-class GetCoursesRequestSchema(BaseModel):
+class GetCoursesQuerySchema(BaseModel):
     """
     Описание структуры запроса на получение списка курсов.
     """
     model_config = ConfigDict(populate_by_name=True)
 
-    courses: list[CourseSchema]
+    user_id: str = Field(alias="userId")
 
 
 class GetCoursesResponseSchema(BaseModel):

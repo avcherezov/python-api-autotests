@@ -6,7 +6,7 @@ from clients.api_coverage import tracker
 from clients.exercises.exercises_schema import (
     CreateExerciseRequestSchema,
     CreateExerciseResponseSchema,
-    GetExercisesQuerySchema,
+    GetExerciseRequestSchema,
     UpdateExerciseRequestSchema,
 )
 from clients.private_http_builder import AuthenticationUserSchema, get_private_http_client
@@ -20,11 +20,11 @@ class ExercisesClient(APIClient):
 
     @allure.step("Get exercises")
     @tracker.track_coverage_httpx(f"{APIRoutes.EXERCISES}")
-    def get_exercises_api(self, query: GetExercisesQuerySchema) -> Response:
+    def get_exercises_api(self, query: GetExerciseRequestSchema) -> Response:
         """
         Метод выполняет получение списка заданий для определенного курса.
 
-        :param query: GetExercisesQuerySchema
+        :param query: GetExerciseRequestSchema
         :return: Ответ от сервера в виде объекта httpx.Response
         """
         return self.get(APIRoutes.EXERCISES, params=query.model_dump(by_alias=True))
