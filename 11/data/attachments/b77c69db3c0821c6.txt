@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAxLTIzVDE0OjM3OjQ1Ljk2ODAwMiIsInVzZXJfaWQiOiIwNjI3YjBkNC04ZGE0LTQ1ZDMtOTNhZC04NTU5Njc1MjdhZTEifQ.sqmVOMgAJYxym8Gj8T_JfTml232Jvh89knEDfAlHPMA' \
+  -H 'content-length: 337' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Under recently Democrat myself company.","maxScore":87,"minScore":16,"description":"Whose say occur much. Me mention commercial must. Front assume bring thus situation activity free they.","estimatedTime":"1 weeks","previewFileId":"ad590593-5128-4229-9862-09a15f95fc50","createdByUserId":"0627b0d4-8da4-45d3-93ad-855967527ae1"}'

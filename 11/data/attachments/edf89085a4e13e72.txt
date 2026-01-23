@@ -1,0 +1,26 @@
+INFO     HTTP_CLIENT:event_hooks.py:27 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:36 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:27 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:36 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:27 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:36 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:27 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:36 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:27 Make POST request to http://localhost:8000/api/v1/exercises
+INFO     HTTP_CLIENT:event_hooks.py:36 Got response 200 OK from http://localhost:8000/api/v1/exercises
+INFO     HTTP_CLIENT:event_hooks.py:27 Make GET request to http://localhost:8000/api/v1/exercises?courseId=32c28877-547d-4531-a0fe-c0ac24f9b038
+INFO     HTTP_CLIENT:event_hooks.py:36 Got response 200 OK from http://localhost:8000/api/v1/exercises?courseId=32c28877-547d-4531-a0fe-c0ac24f9b038
+INFO     BASE_ASSERTIONS:base.py:19 Check that response status code equals to 200
+INFO     EXERCISES_ASSERTIONS:exercises.py:130 Check exercise not found response
+INFO     BASE_ASSERTIONS:base.py:75 Check that length of "exercises" equals to 1
+INFO     EXERCISES_ASSERTIONS:exercises.py:52 Check that "id='eeb6c70c-25e2-4266-ab17-77cdcd731d32' title='Black indeed heavy particularly thank.' course_id='32c28877-547d-4531-a0fe-c0ac24f9b038' max_score=71 min_score=26 order_index=86 description='Trip people husband over. Hand become lot energy too part.\nOr he apply. Individual future century important certain. Care bit official fall small.' estimated_time='8 weeks'" equals to id='eeb6c70c-25e2-4266-ab17-77cdcd731d32' title='Black indeed heavy particularly thank.' course_id='32c28877-547d-4531-a0fe-c0ac24f9b038' max_score=71 min_score=26 order_index=86 description='Trip people husband over. Hand become lot energy too part.\nOr he apply. Individual future century important certain. Care bit official fall small.' estimated_time='8 weeks'
+INFO     BASE_ASSERTIONS:base.py:38 Check that "id" equals to eeb6c70c-25e2-4266-ab17-77cdcd731d32
+INFO     BASE_ASSERTIONS:base.py:38 Check that "title" equals to Black indeed heavy particularly thank.
+INFO     BASE_ASSERTIONS:base.py:38 Check that "course_id" equals to 32c28877-547d-4531-a0fe-c0ac24f9b038
+INFO     BASE_ASSERTIONS:base.py:38 Check that "max_score" equals to 71
+INFO     BASE_ASSERTIONS:base.py:38 Check that "min_score" equals to 26
+INFO     BASE_ASSERTIONS:base.py:38 Check that "order_index" equals to 86
+INFO     BASE_ASSERTIONS:base.py:38 Check that "description" equals to Trip people husband over. Hand become lot energy too part.
+Or he apply. Individual future century important certain. Care bit official fall small.
+INFO     BASE_ASSERTIONS:base.py:38 Check that "estimated_time" equals to 8 weeks
+INFO     SCHEMA_ASSERTIONS:schema.py:21 Validating JSON schema

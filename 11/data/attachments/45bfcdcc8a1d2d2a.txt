@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAxLTIzVDE0OjM3OjQ5LjE3Njk2OSIsInVzZXJfaWQiOiJkNWYyNjY3NS03MjcxLTQ1NDItOGYxOC0xZDY2NDJiNjQ5NWQifQ.7P0wW_8mQW7Xq8GcTmsI7DUzRtMv-p3D6rp90SVXFpg' \
+  -H 'content-length: 416' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Generation wife pretty throughout economy cut which do.","maxScore":63,"minScore":18,"description":"From story debate pick. There town culture.\nWeek off read sister. Card oil oil there improve page six. About southern show determine born southern especially growth.","estimatedTime":"9 weeks","previewFileId":"25da54fb-95e2-40cc-b066-4d9b3e26c760","createdByUserId":"d5f26675-7271-4542-8f18-1d6642b6495d"}'

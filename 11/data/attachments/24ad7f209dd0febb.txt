@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAxLTIzVDE0OjM3OjQ3LjQ3NzEyMCIsInVzZXJfaWQiOiIxNjkwNDUzMC1kNmI5LTRmN2QtOGRhNi02YTQ1OTQ2M2M4M2UifQ.0DRMrDfa91dJgpF4awwIT4ndYJyePozV5KRHUZyZ5m0' \
+  -H 'content-length: 334' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Black indeed heavy particularly thank.","courseId":"32c28877-547d-4531-a0fe-c0ac24f9b038","maxScore":71,"minScore":26,"orderIndex":86,"description":"Trip people husband over. Hand become lot energy too part.\nOr he apply. Individual future century important certain. Care bit official fall small.","estimatedTime":"8 weeks"}'

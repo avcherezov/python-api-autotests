@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAxLTIzVDE0OjM3OjQzLjQwNjUwMiIsInVzZXJfaWQiOiJhMjJiODg3Ni00ZTBmLTQ5OGItODRhZS1hMDNkM2RiNGUzZTYifQ.tWDb3QY-b32w6PM-_4eXfo8EN98tJeZ91fir74GQ_ok' \
+  -H 'content-length: 401' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Above compare every minute reflect.","maxScore":57,"minScore":3,"description":"Seven plant memory pick.\nHealth ok sister magazine cup. Police what government research move. Prepare large world network score always. Child today specific book painting.","estimatedTime":"1 weeks","previewFileId":"2dadf283-17ba-48c8-b764-59f25494012a","createdByUserId":"a22b8876-4e0f-498b-84ae-a03d3db4e3e6"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAxLTIzVDE0OjM3OjQ2Ljg2MDYwNCIsInVzZXJfaWQiOiI5OWUzYjNmNy1lYTUxLTRkMDQtYTdmOC02M2VkOGZlODM0NzYifQ.Zz4wpUpMwOVZCtlyakOgqrbEQ-lv9VSClzVVjxNt3eE' \
+  -H 'content-length: 277' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Sell support generation later kid own.","courseId":"60409bfe-bdf0-4c53-b9f9-43acc0ba0bbb","maxScore":74,"minScore":1,"orderIndex":84,"description":"Mission responsibility range such serious size able message. Detail discuss close road way.","estimatedTime":"2 weeks"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAxLTIzVDE0OjM3OjQ2LjI0NzA2NSIsInVzZXJfaWQiOiI3ZjgwNzYzNC0zMjA3LTQyYmUtYWE2OC0wNDVlODcwNTJiNDYifQ.EFinPNy3b7e7TQyVEZgXqQ3Ay5Vr3Eeh6GxOaU2lNNw' \
+  -H 'content-length: 409' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Collection resource government perform.","maxScore":57,"minScore":22,"description":"Body environmental officer executive before paper. Parent consider certainly race particularly.\nMeeting message hot quality. History view beautiful support while start about.","estimatedTime":"1 weeks","previewFileId":"6ac49f27-fed2-496b-b2f5-a98f0477a963","createdByUserId":"7f807634-3207-42be-aa68-045e87052b46"}'

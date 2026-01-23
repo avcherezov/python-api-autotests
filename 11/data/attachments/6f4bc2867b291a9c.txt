@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/exercises/7684f29c-4282-4294-9040-1f26d04ec01b' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAxLTIzVDE0OjM3OjQ5LjE3Njk2OSIsInVzZXJfaWQiOiJkNWYyNjY3NS03MjcxLTQ1NDItOGYxOC0xZDY2NDJiNjQ5NWQifQ.7P0wW_8mQW7Xq8GcTmsI7DUzRtMv-p3D6rp90SVXFpg' \
+  -H 'content-length: 260' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Today teach including future society including.","maxScore":87,"minScore":18,"orderIndex":6,"description":"Establish weight food. Business up actually left myself ahead hospital. Somebody here industry one direction seek.","estimatedTime":"10 weeks"}'

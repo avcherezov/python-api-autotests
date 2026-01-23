@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAxLTIzVDE0OjM3OjQ5LjE3Njk2OSIsInVzZXJfaWQiOiJkNWYyNjY3NS03MjcxLTQ1NDItOGYxOC0xZDY2NDJiNjQ5NWQifQ.7P0wW_8mQW7Xq8GcTmsI7DUzRtMv-p3D6rp90SVXFpg' \
+  -H 'content-length: 335' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Eye anything father color.","courseId":"ea42f32e-0aea-4cb8-853a-4b358e9ce4a4","maxScore":78,"minScore":23,"orderIndex":67,"description":"Indeed democratic consider not star rise serve. Fact source big election thank break on yourself. Simple one than condition side despite. Once say only imagine.","estimatedTime":"2 weeks"}'

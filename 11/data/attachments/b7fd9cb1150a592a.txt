@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAxLTIzVDE0OjM3OjQ2Ljg2MDYwNCIsInVzZXJfaWQiOiI5OWUzYjNmNy1lYTUxLTRkMDQtYTdmOC02M2VkOGZlODM0NzYifQ.Zz4wpUpMwOVZCtlyakOgqrbEQ-lv9VSClzVVjxNt3eE' \
+  -H 'content-length: 354' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Nearly picture class finally action.","maxScore":88,"minScore":13,"description":"Thus decision large under onto several. Someone pressure police popular. Event pull green instead conference ability first.","estimatedTime":"9 weeks","previewFileId":"8b1c52d0-37be-42d2-a9e9-c0ddb71139db","createdByUserId":"99e3b3f7-ea51-4d04-a7f8-63ed8fe83476"}'

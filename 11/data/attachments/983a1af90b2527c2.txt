@@ -1,0 +1,19 @@
+INFO     HTTP_CLIENT:event_hooks.py:27 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:36 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:27 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:36 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:27 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:36 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:27 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:36 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     BASE_ASSERTIONS:base.py:19 Check that response status code equals to 200
+INFO     COURSES_ASSERTIONS:courses.py:34 Check create course response
+INFO     BASE_ASSERTIONS:base.py:38 Check that "title" equals to Box especially to such space piece.
+INFO     BASE_ASSERTIONS:base.py:38 Check that "max_score" equals to 82
+INFO     BASE_ASSERTIONS:base.py:38 Check that "min_score" equals to 26
+INFO     BASE_ASSERTIONS:base.py:38 Check that "description" equals to Smile improve fact our card can. Return small apply job. Determine relationship every find heavy subject control even. Response read knowledge region look.
+Over part couple the treat reason.
+INFO     BASE_ASSERTIONS:base.py:38 Check that "estimated_time" equals to 4 weeks
+INFO     BASE_ASSERTIONS:base.py:38 Check that "preview_file_id" equals to 55e52680-79f5-41ba-959e-c614845563bb
+INFO     BASE_ASSERTIONS:base.py:38 Check that "created_by_user_id" equals to 09fe7ac8-e761-4837-a475-f1d10659e6f9
+INFO     SCHEMA_ASSERTIONS:schema.py:21 Validating JSON schema

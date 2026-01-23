@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAxLTIzVDE0OjM3OjQ4LjM0NjQxNiIsInVzZXJfaWQiOiIwYTgwY2E0NS00YmJiLTQ2ZTItYmRjOS1lODAxN2JmN2JiNWIifQ.X-c6upeGJvh2I4EgQkNfvl2sUH68ErED6t16SaZchsg' \
+  -H 'content-length: 379' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Medical miss despite big while.","maxScore":63,"minScore":14,"description":"Another north from know. Short actually control. North issue environment join.\nPresident despite large. Particular us notice simple remember drive best.","estimatedTime":"5 weeks","previewFileId":"753eef44-0d1b-46dc-ad23-559526543950","createdByUserId":"0a80ca45-4bbb-46e2-bdc9-e8017bf7bb5b"}'

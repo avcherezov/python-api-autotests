@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAxLTIzVDE0OjM3OjQ3LjQ3NzEyMCIsInVzZXJfaWQiOiIxNjkwNDUzMC1kNmI5LTRmN2QtOGRhNi02YTQ1OTQ2M2M4M2UifQ.0DRMrDfa91dJgpF4awwIT4ndYJyePozV5KRHUZyZ5m0' \
+  -H 'content-length: 383' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Former civil daughter kind past include public.","maxScore":92,"minScore":29,"description":"Perform leave technology knowledge.\nPolicy citizen enter the. Particularly book cause let. Use card same level. Different similar beautiful.","estimatedTime":"3 weeks","previewFileId":"056cf71c-d0ae-4fc2-8cc4-a5cb623e242c","createdByUserId":"16904530-d6b9-4f7d-8da6-6a459463c83e"}'
