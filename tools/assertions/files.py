@@ -1,7 +1,12 @@
 import allure
 
 from clients.errors_schema import InternalErrorResponseSchema, ValidationErrorResponseSchema, ValidationErrorSchema
-from clients.files.files_schema import CreateFileResponseSchema, CreateFileRequestSchema, FileSchema, GetFileResponseSchema
+from clients.files.files_schema import (
+    CreateFileResponseSchema,
+    CreateFileRequestSchema,
+    FileSchema,
+    GetFileResponseSchema
+)
 from config import settings
 from tools.assertions.base import assert_equal
 from tools.assertions.errors import assert_internal_error_response, assert_validation_error_response
@@ -37,6 +42,8 @@ def assert_file(actual: FileSchema, expected: FileSchema):
     :param expected: Ожидаемые данные файла.
     :raises AssertionError: Если хотя бы одно поле не совпадает.
     """
+    logger.info("Check file")
+
     assert_equal(actual.id, expected.id, "id")
     assert_equal(actual.url, expected.url, "url")
     assert_equal(actual.filename, expected.filename, "filename")
@@ -55,6 +62,8 @@ def assert_get_file_response(
     :param create_file_response: Ответ API при создании файла.
     :raises AssertionError: Если данные файла не совпадают.
     """
+    logger.info("Check get file response")
+
     assert_file(get_file_response.file, create_file_response.file)
 
 
