@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAxLTI4VDE3OjIzOjMzLjM5MTc2NSIsInVzZXJfaWQiOiI2ODYyZDRjOC0yMjBlLTRjMmEtOWMxNy1lYTU2NDg1NGU4NTAifQ._pqpjihN0sdUVaoV2JdTspGds_LZv6DfHfLlY4sp_aY' \
+  -H 'content-length: 409' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Company recognize lay land this guy.","maxScore":65,"minScore":2,"description":"Always five worry. Billion from ready we. Without economic play raise Mr.\nView indeed fine. Act forward them matter spring state town. Before morning together attack speech ball.","estimatedTime":"3 weeks","previewFileId":"68439a1f-c10e-49c0-8d29-b33c63b89d18","createdByUserId":"6862d4c8-220e-4c2a-9c17-ea564854e850"}'

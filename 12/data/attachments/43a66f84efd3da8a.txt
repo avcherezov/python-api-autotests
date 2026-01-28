@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/courses/3f01b622-a01d-4fc6-87c6-2583901df2f7' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAxLTI4VDE3OjIzOjM2LjgwNTkxMiIsInVzZXJfaWQiOiI5NmYzMTcxNS05YTJlLTQyMDQtODBjMy00OTk1MDVkZWExNDMifQ.wLmYTT5Re7cgad91IVjWhBM3raanAxsnfOaTwbFklYw' \
+  -H 'content-length: 200' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Put citizen white scene nature.","maxScore":97,"minScore":20,"description":"Reflect us information. Bank exactly form attorney writer senior low. Take tend fight.","estimatedTime":"4 weeks"}'

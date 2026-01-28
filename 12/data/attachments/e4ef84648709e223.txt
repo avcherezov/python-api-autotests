@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAxLTI4VDE3OjIzOjM5LjEyNDY0MiIsInVzZXJfaWQiOiIzNTQ2ODVmYi1lMjE2LTQxMTQtYWNjNi0wZjI1N2FlNGEyMTAifQ.fH4gA6BynYTeEWDi8hjXP_E1cZApxcvyl1PuVdM8Qzg' \
+  -H 'content-length: 365' \
+  -H 'content-type: application/json' \
+  -d '{"title":"View rather dream still seem my part.","maxScore":74,"minScore":15,"description":"Size probably place you brother public. Difficult say win market result.\nWhat push worry tell defense. Not ground matter case those.","estimatedTime":"7 weeks","previewFileId":"b83dd617-5c0b-4b32-8a2f-8647848c6f25","createdByUserId":"354685fb-e216-4114-acc6-0f257ae4a210"}'

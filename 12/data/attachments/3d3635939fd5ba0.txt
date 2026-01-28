@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAxLTI4VDE3OjIzOjM2LjI0OTkzMyIsInVzZXJfaWQiOiJjYjI5MzhlMC00YTM2LTQwZjMtODI0NC04NDAzMjQzYzBjZTIifQ.zhxf1i4H4sF8TiLcDRQS06q7iiRrIlKXau82TXeuVcg' \
+  -H 'content-length: 359' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Case southern tend.","maxScore":63,"minScore":15,"description":"Special rise ever church. Anything while decade several where or. Imagine source nearly performance. Physical each certainly choose factor under.","estimatedTime":"6 weeks","previewFileId":"ee40c331-fd88-4bc0-9a68-c310a228453b","createdByUserId":"cb2938e0-4a36-40f3-8244-8403243c0ce2"}'

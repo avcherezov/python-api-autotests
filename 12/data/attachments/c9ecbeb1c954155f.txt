@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAxLTI4VDE3OjIzOjM3LjA3Mzg1OSIsInVzZXJfaWQiOiJiYzA2YTA0ZC0yMjQwLTRhNWYtODc0NS1mOTYxNGZjYjA0ZjMifQ.eTnhXS7oFCXK93ncILgTUYlmb6QE8b7xO1-mRflyY10' \
+  -H 'content-length: 417' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Technology minute campaign mission.","maxScore":79,"minScore":20,"description":"Hair pressure as style station end actually. Enjoy leg door.\nClose beyond size weight director me these. Him base mind understand. Chance successful onto spring senior election job note.","estimatedTime":"6 weeks","previewFileId":"8122afb8-90bb-4ef4-9451-e0bc394db8f9","createdByUserId":"bc06a04d-2240-4a5f-8745-f9614fcb04f3"}'

@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/exercises/2abba423-c864-482e-9738-49ee934513c7' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAxLTI4VDE3OjIzOjM4Ljg0NDUxNSIsInVzZXJfaWQiOiI3ZjVmODc5My0zNjAxLTQ3NGMtYTFjYy1jOWY2ZWYxOWE1ZDQifQ.TQWkEiHppdIK-8a2vIjoaqHECdRH0HBTvTW5AgWaVF0' \
+  -H 'content-length: 321' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Free subject four give learn worry artist.","maxScore":56,"minScore":24,"orderIndex":66,"description":"Gun former heart our yet natural upon. Process show personal so minute. Time rock put.\nItself begin safe. Hospital sell parent reveal. Character third should a our involve affect.","estimatedTime":"3 weeks"}'

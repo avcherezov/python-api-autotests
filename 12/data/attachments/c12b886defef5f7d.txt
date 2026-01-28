@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAxLTI4VDE3OjIzOjM2LjgwNTkxMiIsInVzZXJfaWQiOiI5NmYzMTcxNS05YTJlLTQyMDQtODBjMy00OTk1MDVkZWExNDMifQ.wLmYTT5Re7cgad91IVjWhBM3raanAxsnfOaTwbFklYw' \
+  -H 'content-length: 460' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Generation artist record million administration current letter town.","maxScore":91,"minScore":3,"description":"Sport rise wall amount. Specific film beyond three future carry. Author charge out activity.\nParty activity morning remain already. Have this but cut determine. Require focus choose travel up east.","estimatedTime":"6 weeks","previewFileId":"6071ee8a-8e7c-4d17-a86d-99d91b8d26a1","createdByUserId":"96f31715-9a2e-4204-80c3-499505dea143"}'
