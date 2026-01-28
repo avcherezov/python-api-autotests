@@ -58,7 +58,7 @@ class TestExercises:
         assert_get_exercises_response(response_data, [function_exercise.response])
 
         validate_json_schema(response.json(), response_data.model_json_schema())
-    
+
     def test_update_exercise(self, exercises_client: ExercisesClient, function_exercise: ExerciseFixture):
         request = UpdateExerciseRequestSchema()
         response = exercises_client.update_exercise_api(function_exercise.response.exercise.id, request)
@@ -66,7 +66,7 @@ class TestExercises:
 
         assert_status_code(response.status_code, HTTPStatus.OK)
         assert_update_exercise_response(request, response_data)
-        
+
         validate_json_schema(response.json(), response_data.model_json_schema())
 
     def test_delete_exercise(self, exercises_client: ExercisesClient, function_exercise: ExerciseFixture):

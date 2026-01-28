@@ -1,4 +1,3 @@
-import pytest
 from http import HTTPStatus
 
 from clients.authentication.authentication_client import AuthenticationClient

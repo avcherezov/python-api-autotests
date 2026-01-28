@@ -59,5 +59,5 @@ def assert_internal_error_response(
     :raises AssertionError: Если значения полей не совпадают.
     """
     logger.info("Check internal error response")
-    
+
     assert_equal(actual.details, expected.details, "details")

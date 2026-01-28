@@ -43,16 +43,16 @@ class TestCourses:
         assert_create_course_response(request, response_data)
 
         validate_json_schema(response.json(), response_data.model_json_schema())
-    
+
     def test_get_course(self, courses_client: CoursesClient, function_course: CourseFixture):
         response = courses_client.get_course_api(function_course.response.course.id)
         response_data = GetCourseResponseSchema.model_validate_json(response.text)
-        
+
         assert_status_code(response.status_code, HTTPStatus.OK)
         assert_get_cource_response(response_data, function_course.response)
 
         validate_json_schema(response.json(), response_data.model_json_schema())
-    
+
     def test_get_courses(
             self,
             courses_client: CoursesClient,
@@ -75,9 +75,9 @@ class TestCourses:
 
         assert_status_code(response.status_code, HTTPStatus.OK)
         assert_update_course_response(request, response_data)
-        
+
         validate_json_schema(response.json(), response_data.model_json_schema())
-    
+
     def test_delete_cource(self, courses_client: CoursesClient, function_course: CourseFixture):
         delete_response = courses_client.delete_course_api(function_course.response.course.id)
         assert_status_code(delete_response.status_code, HTTPStatus.OK)

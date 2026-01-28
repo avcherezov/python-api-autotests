@@ -19,9 +19,9 @@ logger = get_logger("EXERCISES_ASSERTIONS")
 
 @allure.step("Check create exercise response")
 def assert_create_exercise_response(
-        actual: CreateExerciseRequestSchema, 
+        actual: CreateExerciseRequestSchema,
         expected: CreateExerciseResponseSchema
-    ):
+):
     """
     Проверяет, что ответ на создание задания соответствует ответу на создание.
 
@@ -30,7 +30,7 @@ def assert_create_exercise_response(
     :raises AssertionError: Если данные задания не совпадают.
     """
     logger.info("Check create exercise response")
-    
+
     assert_equal(actual.title, expected.exercise.title, "title")
     assert_equal(actual.course_id, expected.exercise.course_id, "course_id")
     assert_equal(actual.max_score, expected.exercise.max_score, "max_score")
@@ -50,7 +50,7 @@ def assert_exercise(actual: ExerciseSchema, expected: ExerciseSchema):
     :raises AssertionError: Если хотя бы одно поле не совпадает.
     """
     logger.info(f'Check that "{actual}" equals to {expected}')
-    
+
     assert_equal(actual.id, expected.id, "id")
     assert_equal(actual.title, expected.title, "title")
     assert_equal(actual.course_id, expected.course_id, "course_id")
@@ -65,7 +65,7 @@ def assert_exercise(actual: ExerciseSchema, expected: ExerciseSchema):
 def assert_get_exercise_response(
         get_exercise_response: GetExerciseResponseSchema,
         create_exercise_responses: CreateExerciseResponseSchema
-    ):
+):
     """
     Проверяет, что ответ на создание задания соответствует ответу на создание.
 
@@ -76,7 +76,7 @@ def assert_get_exercise_response(
     logger.info("Check get exercise response")
 
     assert_exercise(get_exercise_response.exercise, create_exercise_responses.exercise)
-   
+
 
 @allure.step("Check update exercise response")
 def assert_update_exercise_response(
@@ -97,7 +97,7 @@ def assert_update_exercise_response(
     assert_equal(response.exercise.min_score, request.min_score, "min_score")
     assert_equal(response.exercise.order_index, request.order_index, "order_index")
     assert_equal(response.exercise.description, request.description, "description")
-    assert_equal(response.exercise.estimated_time, request.estimated_time, "estimated_time") 
+    assert_equal(response.exercise.estimated_time, request.estimated_time, "estimated_time")
 
 
 @allure.step("Check exercise not found response")

@@ -20,7 +20,7 @@ def authentication_client() -> AuthenticationClient:
 def function_authentication(
         authentication_client: AuthenticationClient,
         function_user: UserFixture,
-    ) -> AuthenticationFixture:
+) -> AuthenticationFixture:
     request = LoginRequestSchema(
         email=function_user.email, password=function_user.password
     )

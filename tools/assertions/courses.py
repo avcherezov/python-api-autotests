@@ -21,9 +21,9 @@ logger = get_logger("COURSES_ASSERTIONS")
 
 @allure.step("Check create course response")
 def assert_create_course_response(
-        actual: CreateCourseRequestSchema, 
+        actual: CreateCourseRequestSchema,
         expected: CreateCourseResponseSchema
-    ):
+):
     """
     Проверяет, что ответ на создание курса соответствует ответам на создание.
 
@@ -32,7 +32,7 @@ def assert_create_course_response(
     :raises AssertionError: Если данные курсов не совпадают.
     """
     logger.info("Check create course response")
-    
+
     assert_equal(actual.title, expected.course.title, "title")
     assert_equal(actual.max_score, expected.course.max_score, "max_score")
     assert_equal(actual.min_score, expected.course.min_score, "min_score")
@@ -59,7 +59,7 @@ def assert_course(actual: CourseSchema, expected: CourseSchema):
     assert_equal(actual.min_score, expected.min_score, "min_score")
     assert_equal(actual.description, expected.description, "description")
     assert_equal(actual.estimated_time, expected.estimated_time, "estimated_time")
-    
+
     assert_file(actual.preview_file, expected.preview_file)
     assert_user(actual.created_by_user, expected.created_by_user)
 
@@ -120,7 +120,6 @@ def assert_update_course_response(
     assert_equal(response.course.min_score, request.min_score, "min_score")
     assert_equal(response.course.description, request.description, "description")
     assert_equal(response.course.estimated_time, request.estimated_time, "estimated_time")
-
 
 
 @allure.step("Check cource not found response")

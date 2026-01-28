@@ -73,7 +73,7 @@ def assert_length(actual: Sized, expected: Sized, name: str):
 
     with allure.step(f"Check that length of {name} equals to {len(expected)}"):
         logger.info(f'Check that length of "{name}" equals to {len(expected)}')
-        
+
         assert len(actual) == len(expected), (
             f'Incorrect object length: "{name}". '
             f'Expected length: {len(expected)}. '

@@ -138,7 +138,7 @@ def assert_get_file_with_incorrect_file_id_response(actual: ValidationErrorRespo
     :raises AssertionError: Если фактический ответ не соответствует ожидаемому.
     """
     logger.info("Check get file with incorrect file id response")
-    
+
     expected = ValidationErrorResponseSchema(
         details=[
             ValidationErrorSchema(
