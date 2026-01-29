@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAxLTI5VDE3OjQyOjQ1Ljg2NDg4NCIsInVzZXJfaWQiOiIyMmQ4NTBiOC0xMGU3LTQ0YjEtODg2Mi1kZWI4MWI4NTg3OTAifQ.YCkVsZj-El923friMzUETl8mV0CyCw_GMOpeOUXNgto' \
+  -H 'content-length: 404' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Beautiful police year we.","maxScore":84,"minScore":15,"description":"Effect happy behavior here young certainly. Poor argue challenge news exist. Seek fire data street finally.\nBenefit doctor early. One indicate more. Exist road local figure knowledge.","estimatedTime":"1 weeks","previewFileId":"9fc39fdd-5c34-463a-a31e-0d03c1a36fc4","createdByUserId":"22d850b8-10e7-44b1-8862-deb81b858790"}'

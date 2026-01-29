@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAxLTI5VDE3OjQyOjQyLjczOTg2NiIsInVzZXJfaWQiOiI0OWZhYWU2MC0wZjc3LTQxMTctOThjMS1kZGJiMTFjYWQxY2YifQ.4IPz2T-7_igau0F3u9wifp8fkHk0XEOrZggl2MDzWm4' \
+  -H 'content-length: 395' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Drug together model development.","maxScore":57,"minScore":25,"description":"Forward option resource provide present trade. Particularly hope team effect couple mention.\nAnything turn close. Future government see south administration prove use.","estimatedTime":"1 weeks","previewFileId":"adf4aa5f-2afb-490e-a4e1-cc48be46ae27","createdByUserId":"49faae60-0f77-4117-98c1-ddbb11cad1cf"}'

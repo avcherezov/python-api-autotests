@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAxLTI5VDE3OjQyOjQ1LjMwNzkzOCIsInVzZXJfaWQiOiIyNzVhNmRlMi00ZTEwLTQ0YWUtOWZkMC04MTQ5NjJmZTQyMDQifQ.G05oPpBIy-ITBkiwKB7NRrWnJ24kHv4jFeoDRnK7OwQ' \
+  -H 'content-length: 420' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Sister together run issue life again to measure.","maxScore":98,"minScore":13,"description":"Whether successful idea paper about range military. Employee carry from. Community program window.\nEmployee enjoy suffer year main outside site later. Arm detail environmental.","estimatedTime":"1 weeks","previewFileId":"2970f329-a3e4-46c1-b780-58979de1cb94","createdByUserId":"275a6de2-4e10-44ae-9fd0-814962fe4204"}'

@@ -1,0 +1,26 @@
+INFO     HTTP_CLIENT:event_hooks.py:27 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:36 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:27 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:36 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:27 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:36 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:27 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:36 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:27 Make POST request to http://localhost:8000/api/v1/exercises
+INFO     HTTP_CLIENT:event_hooks.py:36 Got response 200 OK from http://localhost:8000/api/v1/exercises
+INFO     HTTP_CLIENT:event_hooks.py:27 Make GET request to http://localhost:8000/api/v1/exercises?courseId=40676874-6787-48af-8e03-6f7e21eef7fa
+INFO     HTTP_CLIENT:event_hooks.py:36 Got response 200 OK from http://localhost:8000/api/v1/exercises?courseId=40676874-6787-48af-8e03-6f7e21eef7fa
+INFO     BASE_ASSERTIONS:base.py:19 Check that response status code equals to 200
+INFO     EXERCISES_ASSERTIONS:exercises.py:130 Check exercise not found response
+INFO     BASE_ASSERTIONS:base.py:75 Check that length of "exercises" equals to 1
+INFO     EXERCISES_ASSERTIONS:exercises.py:52 Check that "id='acc44f6f-6769-420a-9f00-a55058655439' title='And parent choose occur second.' course_id='40676874-6787-48af-8e03-6f7e21eef7fa' max_score=64 min_score=10 order_index=92 description='Board region economic near land project recent. Expert off cover loss dog. Special write feeling hit hour me then.\nLaugh improve travel life guy report house pay. Thought natural song spend.' estimated_time='2 weeks'" equals to id='acc44f6f-6769-420a-9f00-a55058655439' title='And parent choose occur second.' course_id='40676874-6787-48af-8e03-6f7e21eef7fa' max_score=64 min_score=10 order_index=92 description='Board region economic near land project recent. Expert off cover loss dog. Special write feeling hit hour me then.\nLaugh improve travel life guy report house pay. Thought natural song spend.' estimated_time='2 weeks'
+INFO     BASE_ASSERTIONS:base.py:38 Check that "id" equals to acc44f6f-6769-420a-9f00-a55058655439
+INFO     BASE_ASSERTIONS:base.py:38 Check that "title" equals to And parent choose occur second.
+INFO     BASE_ASSERTIONS:base.py:38 Check that "course_id" equals to 40676874-6787-48af-8e03-6f7e21eef7fa
+INFO     BASE_ASSERTIONS:base.py:38 Check that "max_score" equals to 64
+INFO     BASE_ASSERTIONS:base.py:38 Check that "min_score" equals to 10
+INFO     BASE_ASSERTIONS:base.py:38 Check that "order_index" equals to 92
+INFO     BASE_ASSERTIONS:base.py:38 Check that "description" equals to Board region economic near land project recent. Expert off cover loss dog. Special write feeling hit hour me then.
+Laugh improve travel life guy report house pay. Thought natural song spend.
+INFO     BASE_ASSERTIONS:base.py:38 Check that "estimated_time" equals to 2 weeks
+INFO     SCHEMA_ASSERTIONS:schema.py:21 Validating JSON schema

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAxLTI5VDE3OjQyOjQ1LjU4NTc5MSIsInVzZXJfaWQiOiI3YTk1YzYxNy0yZmZiLTRmNGItYmE5YS1mYzk4N2YyNjdlZWEifQ.UypLjMWmZNxzMEpGc9Np7MfpuAejkxUYKCWn1z7t2Js' \
+  -H 'content-length: 356' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Animal account Democrat.","maxScore":65,"minScore":30,"description":"Research store owner candidate tend. Bar board choose price.\nClass billion under among idea address most. Inside especially senior free.","estimatedTime":"2 weeks","previewFileId":"21d29c12-1dce-4935-99b4-37f68c23accf","createdByUserId":"7a95c617-2ffb-4f4b-ba9a-fc987f267eea"}'

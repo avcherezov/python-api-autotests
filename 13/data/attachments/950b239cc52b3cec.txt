@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAxLTI5VDE3OjQyOjQzLjI4NzI0MyIsInVzZXJfaWQiOiJjNTFjMmI2Yy1jY2YyLTRkYmQtYjRjMC0yNzg4MmZmZGYwOTkifQ.4qqB7IGxx_slm9tRMuRCFKPbHnp_aDgel4ZyRKXV_7E' \
+  -H 'content-length: 406' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Soon off money remember.","maxScore":89,"minScore":12,"description":"Job bill fast break bed. One mother style discuss grow moment.\nGlass early oil campaign whole pass movie. Various civil process two.\nCheck best either reflect campaign strong sometimes.","estimatedTime":"4 weeks","previewFileId":"359816f3-cd7d-439a-ae31-4799dc897f1e","createdByUserId":"c51c2b6c-ccf2-4dbd-b4c0-27882ffdf099"}'
